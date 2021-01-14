@@ -24,7 +24,7 @@
 
 #if BitcoinKitXcode
 import Foundation
-import secp256k1
+import secp256k12
 
 // swiftlint:disable:next type_name
 class _SwiftKey {
