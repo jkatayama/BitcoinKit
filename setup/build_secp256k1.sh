@@ -34,9 +34,10 @@ cp "$TARGETDIR_IPHONEOS/lib/libsecp256k1.a" "$SCRIPT_DIR/../Libraries/secp256k1/
 #xcrun lipo -create "$TARGETDIR_IPHONEOS/lib/libsecp256k1.a" \
 #                   "$TARGETDIR_SIMULATOR/lib/libsecp256k1.a" \
 #                   -o "$SCRIPT_DIR/../Libraries/secp256k1/lib/libsecp256k1.a"
-
+echo "will cp"
 cp -rf $TDIR/src/include "$SCRIPT_DIR/../Libraries/secp256k1"
-
+echo "end cp"
+echo "will rm"
 rm -rf $TDIR
-
+echo "end rm"
 exit 0
